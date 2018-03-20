@@ -14,8 +14,8 @@ class App extends React.Component {
   What is markdown?
   -----------
 
-  See this [link](https://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to-do-lists-and-notes) 
-  for more information.
+  See this [article](https://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to-do-lists-and-notes) 
+  from lifehacker for more information.
    
   Some examples
   -----------
