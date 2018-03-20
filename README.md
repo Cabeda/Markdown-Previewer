@@ -14,6 +14,6 @@ This is a react project developed for the Dataviz Certification.
 1. Go to the project main directory
 2. Write in the console  **npm build**
 
-##License
+## License
 
 This project has an MIT license
