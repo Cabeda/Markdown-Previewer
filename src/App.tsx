@@ -44,12 +44,17 @@ class Previewer extends React.Component<PreviewerProps> {
 class App extends React.Component {
 
   initialText = `
-  Heading
+  Markdown Previewer
   =======
   
-  Sub-heading
+  What is markdown?
   -----------
+
+  See this [link](https://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to-do-lists-and-notes) 
+  for more information.
    
+  Some examples
+  -----------
   ### Another deeper heading
    
   Paragraphs are separated
@@ -72,9 +77,6 @@ class App extends React.Component {
     1. apples
     2. oranges
     3. pears
-  
-  The rain---not the reign---in
-  Spain.
   
   *[José Cabeda](https://cabeda.github.io)*`;
   state: AppState = {
