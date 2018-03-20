@@ -1,45 +1,9 @@
 import * as React from 'react';
 import * as marked from 'marked';
 import './App.css';
-
-interface WriterProps {
-  rawText: string;
-  onTextChange(event: React.ChangeEvent<HTMLTextAreaElement>): void;
-}
-
-interface PreviewerProps {
-  text: string;
-}
-
-interface AppState {
-  rawText: string;
-  markdownText: string;
-}
-
-class Writer extends React.Component<WriterProps> {
-
-  constructor(props: WriterProps) {
-    super(props);
-
-  }
-
-  render() {
-    return (
-      <textarea placeholder="Write text here" onChange={e => this.props.onTextChange(e)}  className="container writer">
-        {this.props.rawText}
-      </textarea>
-    );
-  }
-}
-
-class Previewer extends React.Component<PreviewerProps> {
-
-  render() {
-    return (
-        <div className="container markdown" dangerouslySetInnerHTML={{ __html: this.props.text }}/>
-      );
-  }
-}
+import Writer from './components/Writer';
+import Previewer from './components/Previewer';
+import { AppState } from './shared/interfaces/AppState.interface';
 
 class App extends React.Component {
 
