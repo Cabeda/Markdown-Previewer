@@ -17,4 +17,5 @@ height: 100%;
   border-left: black;
   border: black;
   max-width: 100%;
+  word-wrap: break-word
 }

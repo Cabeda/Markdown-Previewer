@@ -25,7 +25,7 @@ class Writer extends React.Component<WriterProps> {
 
   render() {
     return (
-      <textarea onChange={e => this.props.onTextChange(e)} className="container writer">
+      <textarea placeholder="Write text here" onChange={e => this.props.onTextChange(e)}  className="container writer">
         {this.props.rawText}
       </textarea>
     );
@@ -43,7 +43,8 @@ class Previewer extends React.Component<PreviewerProps> {
 
 class App extends React.Component {
 
-  initialText = `Heading
+  initialText = `
+  Heading
   =======
   
   Sub-heading
