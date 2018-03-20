@@ -10,12 +10,12 @@ height: 100%;
 }
 
 .writer {
-  max-width: 98%;;
+  min-width: 98%;
+  max-width: 98%;
 }
 
 .markdown {
   border-left: black;
-  border: black;
   max-width: 100%;
   word-wrap: break-word
 }
